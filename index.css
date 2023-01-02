@@ -1,0 +1,291 @@
+:root {
+    --font-family: 'Smythe';
+    --bg-color: gray;
+    --main-bg-color: #F5F5F5;
+    --white-color: #FFF;
+    --gray-color: #8B8B8B;
+    --dark-gray-color: #393333;
+    --star-color: gold;
+    --primary-color: #16DB99;
+    --secondary-color: #065F46;
+    --tertiary-color: #ECFDF5;
+    --font-size: 1.25rem;
+    --header-bg-image: url(../assets/burger.png);
+    --main-padding: 0.625rem 2.5rem;
+    --title-font-size: 2.5rem;
+    --title-line-height: 1.5rem;
+    --title-font-weight: 400;
+    --slogan-font-size: 1.375rem;
+    --slogan-line-height: 0.875rem;
+    --modal-box-shadow: 5px 5px 255px 0px #00000080;
+    --modal-border: 1.3px solid #757575;
+    --modal-width: 32.75rem; 
+    --border-radius: 0.25rem;
+    --star-padding:.25rem .5rem ;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    width: 37.5rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    font-size: var(--font-size);
+} 
+
+header {
+    background-image: var(--header-bg-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2.875rem;
+}
+
+main {
+    background-color: var(--main-bg-color);
+    padding: var(--main-padding);
+    height: max-content;
+    min-height: 43.75rem;
+}
+.title, .slogan {
+    margin: 0;
+    color: var(--white-color);
+}
+
+.title {
+    font-size: var(--title-font-size);
+    line-height: var(--title-line-height);
+    font-weight: var(--title-font-weight);
+    font-style: normal;
+    padding-bottom: 1rem;
+}
+
+.slogan {
+    font-size: var(--slogan-font-size);
+    line-height: var(--slogan-line-height);    
+}
+
+/*menu item*/
+.menuItem-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #D2D2D2;
+    padding: 1.25rem 0;
+}
+
+.item-emoji {
+    font-size: 4.75rem;
+}
+
+.content-wrapper {
+    width: 50%;
+    padding-left: 1.875rem;
+    
+}
+.item-name {
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+.item-ingredients {
+    color: var(--gray-color);
+    margin: 0 0 .5rem;
+}
+.item-price,.total-price {
+    margin: 0;
+}
+.add-btn {
+    width: 3.125rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%; 
+    background-color: transparent;
+    border: 1.5px solid var(--gray-color);
+    color: #3C3C3C;
+    align-self: center;
+    font-size: 1.375rem;
+    font-weight: 200;
+}
+.add-btn:hover {
+    background-color: var(--gray-color);
+    color: var(--white-color);
+    transition: ease-in-out 1s;
+    transform: scale(1.15);
+}
+.add-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--primary-color);
+}
+
+/*order*/
+
+.order-title {
+    text-align: center;
+}
+
+.order-line, .total-price-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.375rem;
+}
+
+.order-wrapper {
+    display: flex;
+}
+.remove-btn {
+    line-height: 1.5rem;
+    background-color: transparent;
+    border: none;
+    font-size: 0.75rem;
+    font-weight: light;
+    color: var(--gray-color);
+}
+
+.remove-btn:hover{
+    color: var(--dark-gray-color);
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+
+hr {
+    color: var(--dark-gray-color);
+}
+
+.order-btn, .pay-btn {
+    width: 100%;
+    height: 3.75rem;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    color: var(--white-color);
+    font-size: 1rem;
+    
+}
+
+.order-btn:hover, .pay-btn:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transition: ease-out 1s;
+    transform: scale(1.05);
+}
+
+.hidden{
+    display: none;
+}
+
+.checkout-modal {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: var(--modal-width);
+    aspect-ratio: 1 / 1;
+    background-color: var(--white-color);
+    border: var(--modal-border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--modal-box-shadow); 
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 45px;
+    color: var(--secondary-color);
+    padding: 25px;
+    text-align: center;
+    background: var(--tertiary-color);
+    border-radius: var(--border-radius);
+}
+
+.message-container > p, .message-container > h2 {
+    margin-bottom: .25rem ;
+}
+.close-modal-btn-container {
+    text-align: right;
+    margin: 9px;
+}
+
+.close-btn {
+    font-size: 22px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+}
+
+.close-btn:hover {
+   color: #757575;
+}
+.modal-inner{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.modal-inner > h2 {
+    text-align: center
+}
+#payment-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#payment-form > input[type="text"],
+#payment-form > input[type="tel"],
+#payment-form > input[type="number"] {
+    height: 70px;
+    border: 1.3px solid #757575;
+    border-radius: 4px;
+    margin-bottom: 21px;
+    padding-left: 26px;
+    color: #757575;
+}
+
+#payment-form > input[type="text"]:focus,
+#payment-form > input[type="tel"]:focus,
+#payment-form > input[type="number"]:focus {
+    transition: ease-in-out 1s;
+    transform: scale(1.1);
+} 
+
+.btn {
+    cursor: pointer;
+}
+
+#rating-container {
+  margin: 0 auto;
+  background-color: var(--secondary-color);
+  width: fit-content;
+  padding: var(--star-padding);
+  border-radius: var(--border-radius);
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.star {
+  cursor: pointer;
+  color: var(--tertiary-color);
+  font-size: 1.5em;
+}
+.star:hover {
+    text-shadow: 0 0 10px var(--star-color); 
+}
+
+.selected {
+  color: var(--star-color);
+  text-shadow: 0 0 10px var(--star-color); 
+}
+
+.dismiss-btn {
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: none;
+    font-size: .75rem;
+    text-decoration-line: underline;
+}

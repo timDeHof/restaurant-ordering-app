@@ -1,0 +1,38 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <!-- Google Fonts -->
+       <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+       
+    </head>
+    <body>
+        <header>
+            <h1 class="title">Timmy's Diner</h1>
+            <p class="slogan">The best burgers and pizzas in town.</p>
+        </header>
+        <main>
+            <section class="menu" id="menu">
+                <!-- Menu here!! -->
+            </section>
+            <section class="order" id="order">
+                <!-- Order here!! -->
+            </section>
+            <section class="checkout-modal hidden" id="checkout-modal">
+                <div class="close-modal-btn-container">
+			        <button class="close-btn btn" id="close-btn" >X</button>
+		        </div>
+                <div class="modal-inner" id="modal-inner">
+                    <h2>Enter card details</h2>
+                    <form id='payment-form'>
+                        <input type='text' name='fullName' placeholder='Enter your name' required/>
+                        <input type='tel' inputmode='numeric' pattern='[0-9]{13,19}' maxLength='19' name='cardNumber' placeholder='Enter card number' required/>
+                        <input type='text' inputmode="numeric" maxlength='3' pattern='[0-9][0-9][0-9]' placeholder='Enter CVV' required/>
+                        <button type='button' class='pay-btn btn' id='pay-btn'>Pay</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
