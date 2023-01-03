@@ -10,7 +10,7 @@
     --secondary-color: #065F46;
     --tertiary-color: #ECFDF5;
     --font-size: 1.25rem;
-    --header-bg-image: url(../assets/burger.png);
+    --header-bg-image: url('../assets/burger.png');
     --main-padding: 0.625rem 2.5rem;
     --title-font-size: 2.5rem;
     --title-line-height: 1.5rem;
@@ -19,7 +19,7 @@
     --slogan-line-height: 0.875rem;
     --modal-box-shadow: 5px 5px 255px 0px #00000080;
     --modal-border: 1.3px solid #757575;
-    --modal-width: 32.75rem; 
+    --modal-width: 32.75rem;
     --border-radius: 0.25rem;
     --star-padding:.25rem .5rem ;
 }
@@ -33,7 +33,7 @@ html,body {
     box-sizing: border-box;
     background-color: var(--bg-color);
     font-size: var(--font-size);
-} 
+}
 
 header {
     background-image: var(--header-bg-image);
@@ -63,7 +63,7 @@ main {
 
 .slogan {
     font-size: var(--slogan-font-size);
-    line-height: var(--slogan-line-height);    
+    line-height: var(--slogan-line-height);
 }
 
 /*menu item*/
@@ -82,7 +82,7 @@ main {
 .content-wrapper {
     width: 50%;
     padding-left: 1.875rem;
-    
+
 }
 .item-name {
     font-size: 1.75rem;
@@ -99,7 +99,7 @@ main {
 .add-btn {
     width: 3.125rem;
     aspect-ratio: 1 / 1;
-    border-radius: 50%; 
+    border-radius: 50%;
     background-color: transparent;
     border: 1.5px solid var(--gray-color);
     color: #3C3C3C;
@@ -162,7 +162,7 @@ hr {
     border-radius: var(--border-radius);
     color: var(--white-color);
     font-size: 1rem;
-    
+
 }
 
 .order-btn:hover, .pay-btn:hover {
@@ -188,7 +188,7 @@ hr {
     background-color: var(--white-color);
     border: var(--modal-border);
     border-radius: var(--border-radius);
-    box-shadow: var(--modal-box-shadow); 
+    box-shadow: var(--modal-box-shadow);
 }
 
 .message-container {
@@ -253,7 +253,7 @@ hr {
 #payment-form > input[type="number"]:focus {
     transition: ease-in-out 1s;
     transform: scale(1.1);
-} 
+}
 
 .btn {
     cursor: pointer;
@@ -274,12 +274,12 @@ hr {
   font-size: 1.5em;
 }
 .star:hover {
-    text-shadow: 0 0 10px var(--star-color); 
+    text-shadow: 0 0 10px var(--star-color);
 }
 
 .selected {
   color: var(--star-color);
-  text-shadow: 0 0 10px var(--star-color); 
+  text-shadow: 0 0 10px var(--star-color);
 }
 
 .dismiss-btn {
