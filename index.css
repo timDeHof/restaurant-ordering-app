@@ -35,9 +35,8 @@ html,body {
 }
 
 header {
-    background-image: url('../assets/burger.png');
+    background-image: url('./assets/burger.png') center no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
     padding: 2.875rem;
 }
 
@@ -103,7 +102,7 @@ main {
     border: 1.5px solid var(--gray-color);
     color: #3C3C3C;
     align-self: center;
-    font-size: 1.375rem;
+    font-size: 2.375rem;
     font-weight: 200;
 }
 .add-btn:hover {
