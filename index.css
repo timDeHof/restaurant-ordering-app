@@ -10,7 +10,6 @@
     --secondary-color: #065F46;
     --tertiary-color: #ECFDF5;
     --font-size: 1.25rem;
-    --header-bg-image: url('../assets/burger.png');
     --main-padding: 0.625rem 2.5rem;
     --title-font-size: 2.5rem;
     --title-line-height: 1.5rem;
@@ -36,7 +35,7 @@ html,body {
 }
 
 header {
-    background-image: var(--header-bg-image);
+    background-image: url('../assets/burger.png');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 2.875rem;
