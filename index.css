@@ -35,7 +35,7 @@ html,body {
 }
 
 header {
-    background-image: url('./assets/burger.png') center no-repeat;
+    background: url('./assets/burger.png') center no-repeat;
     background-size: cover;
     padding: 2.875rem;
 }
